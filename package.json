@@ -1,0 +1,34 @@
+{
+  "name": "scroll-speed",
+  "version": "0.0.0",
+  "description": "Get the scroll speed being used on either the window or a particular element.",
+  "main": "index.js",
+  "scripts": {
+    "test": "beefy test.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/scroll-speed.git"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hughsk/scroll-speed/issues"
+  },
+  "homepage": "https://github.com/hughsk/scroll-speed",
+  "dependencies": {
+    "events": "^1.0.0",
+    "wheel": "0.0.0"
+  },
+  "devDependencies": {
+    "beefy": "^1.1.0"
+  },
+  "keywords": [
+    "scroll",
+    "speed",
+    "event",
+    "motion",
+    "mouse",
+    "wheel"
+  ]
+}
