@@ -37,6 +37,6 @@ function getScroller(element, preventDefault) {
     if (!e.preventDefault) return
 
     e.preventDefault()
-    e.stopPropagation()
+    if (e.stopPropagation) e.stopPropagation()
   }
 }
