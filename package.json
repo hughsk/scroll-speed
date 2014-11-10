@@ -1,6 +1,6 @@
 {
   "name": "scroll-speed",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get the scroll speed being used on either the window or a particular element.",
   "main": "index.js",
   "scripts": {
