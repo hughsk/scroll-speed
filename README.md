@@ -35,6 +35,10 @@ The vertical speed of the scroll.
 
 The depth speed of the scroll – you never know!
 
+### speed.dispose()
+
+To be called when this instance is no longer required: removes all of the attached event listeners.
+
 ## License
 
 MIT. See [LICENSE.md](http://github.com/hughsk/scroll-speed/blob/master/LICENSE.md) for details.

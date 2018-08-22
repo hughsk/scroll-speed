@@ -18,10 +18,11 @@
   "homepage": "https://github.com/hughsk/scroll-speed",
   "dependencies": {
     "events": "^1.0.0",
-    "wheel": "0.0.0"
+    "wheel": "0.0.5"
   },
   "devDependencies": {
-    "beefy": "^1.1.0"
+    "beefy": "^2.1.8",
+    "browserify": "^16.2.2"
   },
   "keywords": [
     "scroll",
