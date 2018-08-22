@@ -1,5 +1,6 @@
 var Emitter = require('events/')
-var wheel = require('wheel')
+var addWheelListener = require('wheel').addWheelListener
+var removeWheelListener = require('wheel').removeWheelListener
 
 module.exports = getScroller
 
@@ -7,6 +8,7 @@ function getScroller(element, preventDefault) {
   var scroll = new Emitter
 
   scroll.flush = flush
+  scroll.dispose = dispose
   flush()
 
   if (typeof window === 'undefined') {
@@ -14,7 +16,7 @@ function getScroller(element, preventDefault) {
   }
 
   element = element || window
-  wheel(element, onscroll, false)
+  addWheelListener(element, onscroll, false)
 
   return scroll
 
@@ -38,5 +40,9 @@ function getScroller(element, preventDefault) {
 
     e.preventDefault()
     if (e.stopPropagation) e.stopPropagation()
+  }
+
+  function dispose() {
+    removeWheelListener(element, onscroll, false)
   }
 }
